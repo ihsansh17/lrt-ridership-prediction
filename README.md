@@ -47,8 +47,8 @@ This model can benefit multiple teams within a transit organization:
 
 ## Future Work
 
-- **Incorporate Additional Features**: Include weather and special events data to capture additional factors influencing ridership.
-- **Alternative Baseline Comparisons**: Test against other baseline models, such as a moving average or seasonal naive forecast.
+- **Incorporate Additional Features**: Include weather data, public holidays and special events data to capture additional factors influencing ridership.
+- **Forecasting Methods**: Explore time-series techinques such as Exponential Smoothing and ARIMA.
 - **Model Interpretability**: Use feature importance or SHAP values to better understand which factors most impact ridership.
 
 ## Usage
