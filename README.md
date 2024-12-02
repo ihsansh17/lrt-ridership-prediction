@@ -8,21 +8,6 @@ This project uses machine learning to predict daily ridership for LRT Kelana Jay
 - **Approach**: Built and tuned an XGBoost regression model using time-related features (day of the week, month, etc.) and lag features. The model was evaluated using cross-validation (TimeSeriesSplit) and compared to a baseline model based on day-of-week averages.
 - **Key Result**: The XGBoost model achieved lower RMSE than the baseline, indicating improved predictive performance.
 
-## Table of Contents
-1. [Motivation](#motivation)
-2. [Methodology](#methodology)
-3. [Results](#results)
-4. [Business Impact](#business-impact)
-5. [Future Work](#future-work)
-6. [Usage](#usage)
-7. [Requirements](#requirements)
-
-## Motivation
-Predicting daily ridership accurately is essential for:
-- **Optimizing Operations**: Ensuring the right number of vehicles and staff are available to meet demand.
-- **Improving Customer Experience**: Reducing crowding and managing traffic flows.
-- **Strategic Planning**: Helping planners decide on potential expansions, service adjustments, and budget allocations.
-
 ## Methodology
 
 1. **Data Preparation**: Created features capturing time-related information (e.g., day of the week, month) and lagged ridership values to capture recent trends.
@@ -35,6 +20,12 @@ Predicting daily ridership accurately is essential for:
 ## Results
 
 - **Model Performance**: The XGBoost model outperformed the baseline day-of-week average, achieving a lower RMSE on the test set. This indicates a more precise prediction of daily ridership patterns.
+
+## Motivation
+Predicting daily ridership accurately is essential for:
+- **Optimizing Operations**: Ensuring the right number of vehicles and staff are available to meet demand.
+- **Improving Customer Experience**: Reducing crowding and managing traffic flows.
+- **Strategic Planning**: Helping planners decide on potential expansions, service adjustments, and budget allocations.
 
 ## Business Impact
 
@@ -51,38 +42,3 @@ This model can benefit multiple teams within a transit organization:
 - **Forecasting Methods**: Explore time-series techinques such as Exponential Smoothing and ARIMA.
 - **Data Granularity**: Collect hourly ridership if possible for more precise predictions.
 - **Broader Deployment**: Expand this model to other metro lines.
-
-## Usage
-
-To train and evaluate the model, follow these steps:
-
-1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/yourusername/metro-ridership-prediction.git
-    cd metro-ridership-prediction
-    ```
-
-2. **Run the Training Script**:
-    ```bash
-    python train_model.py
-    ```
-
-3. **Generate Predictions**:
-    Use the trained model to generate predictions on a new dataset:
-    ```python
-    python predict_ridership.py --input data/new_data.csv --output results/predictions.csv
-    ```
-
-## Requirements
-
-- Python 3.8+
-- Libraries:
-  - xgboost
-  - scikit-learn
-  - pandas
-  - numpy
-  - optuna
-
-Install requirements using:
-```bash
-pip install -r requirements.txt
