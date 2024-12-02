@@ -49,8 +49,8 @@ This model can benefit multiple teams within a transit organization:
 
 - **Incorporate Additional Features**: Include weather data, public holidays and special events data to capture additional factors influencing ridership.
 - **Forecasting Methods**: Explore time-series techinques such as Exponential Smoothing and ARIMA.
-- **Broader Deployment**: Expand this model to other metro lines and integrate it into live operational systems.
-- **Model Interpretability**: Use feature importance or SHAP values to better understand which factors most impact ridership.
+- **Data Granularity**: Collect hourly ridership if possible for more precise predictions.
+- - **Broader Deployment**: Expand this model to other metro lines.
 
 ## Usage
 
