@@ -19,6 +19,7 @@ This project uses machine learning to predict daily ridership for LRT Kelana Jay
 
 ## Results
 
+![My Image](assets/preds.png "Optional Title")
 - **Model Performance**: The XGBoost model outperformed the baseline day-of-week average, achieving a lower RMSE on the test set. This indicates a more precise prediction of daily ridership patterns.
 
 ## Motivation
