@@ -20,6 +20,15 @@ This project uses machine learning to predict daily ridership for LRT Kelana Jay
 ## Results
 
 ![My Image](assets/preds.png "Optional Title")
+**Findings**:
+- We can still see the weekly seasonality with higher ridership on weekdays and lower ridership on weekends, aligning with historical patterns.
+- Ridership is expected to peak on Wednesdays, Thursdays and Fridays and drop significantly on Saturdays and Sundays throughout both months.
+- The ridership will likely be slightly higher in November than in December.
+
+**Recommendations**:
+- Allocate additional vehicles and staff to handle higher weekday demand, especially midweek.
+- Scale back operations on weekends to reduce costs while maintaining sufficient service for expected ridership.
+- Closely monitor actual riderhip and adjust operational planning accordingly.
 - **Model Performance**: The XGBoost model outperformed the baseline day-of-week average, achieving a lower RMSE on the test set. This indicates a more precise prediction of daily ridership patterns.
 
 ## Motivation
