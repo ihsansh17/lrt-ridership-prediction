@@ -11,8 +11,9 @@ This project uses machine learning to predict daily ridership for LRT Kelana Jay
 ## Methodology
 
 1. **Data Preparation**: Created features capturing time-related information (e.g., day of the week, month) and lagged ridership values to capture recent trends.
-2. **Hyperparameter Tuning**: Used Optuna to find optimal hyperparameters for the XGBoost model.
-3. **Evaluation**:
+2. **Feature Selection**: Performed backward elimination based on feature importance ranking.
+3. **Hyperparameter Tuning**: Used Optuna to find optimal hyperparameters for the XGBoost model.
+4. **Evaluation**:
    - **Cross-Validation**: Used TimeSeriesSplit to evaluate model performance in a time series context.
    - **Baseline Approach**: Compared the model to day-of-week average ridership calculated from the training set for each day of the week.
    - **Performance Metric**: Root Mean Squared Error (RMSE) to evaluate the prediction accuracy.
